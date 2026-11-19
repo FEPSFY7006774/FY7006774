@@ -51,7 +51,15 @@
         <!-- Abstract not in #article-text so not counted -->
         <section id = "abstract">
             <h2>Abstract</h2>
-            <p>...</p>
+            <p>
+                Underwater vehicles are a vital part of progressing the discovery of
+                the ocean as they allow humans to reach parts of the ocean that are 
+                too deep, too high pressure or too remote to be visited. This article
+                examines how underwater vehicles can be optimised for deep sea operation
+                by looking at four areas of design: hull shape and drag, pressure, 
+                propulsion and biometric design. Overall optimising a vehicle means 
+                balancing competing demands so that the best design depends on the mission.
+            </p>
         </section>
 
        <!-- everything in  div is counted  --> 
@@ -59,7 +67,8 @@
 
             <section id="introduction">
                 <h2>Introduction</h2>
-                <p>The ocean covers around 70% of the Earth's surface and yet only 5%
+                <p>
+                    The ocean covers around 70% of the Earth's surface and yet only 5%
                     of the ocean has been explored with 27.3% of the global seafloor 
                     being mapped <a href="#ref1">[Bristol Aquarium, 2026]</a>. This makes the ocean a massive
                     point of interest for humanity, but we cannot explore further without
@@ -74,12 +83,44 @@
 
             <section id="drag">
                 <h2>Drag and Hull Shape</h2>
-                <p>...</p>
+                <p>
+                    Hull design is the engineering of a watercraft’s shape to control how it 
+                    interacts and navigates efficiently through water. Depending on the vessel's
+                    function hull design needs to balance between hydrostatics (buoyancy and stability)
+                    and hydrodynamics (speed, drag and how effective it is at cutting through water).
+                    A hull shape of an underwater vehicle can be split into the nose, middle, tail and
+                    propulsion with most AUVs (autonomous underwater vehicles) being designed based on
+                    the Myring hull profile equations [Myring, 1976] which are known to produce low drag
+                    [ScienceDirect, 2012]. Drag on underwater vehicles occurs when water is flowing against
+                    the vessel. This difference creates a backward force called pressure drag. As the 
+                    vessel speeds up, it experiences a greater drag force due to it colliding with more
+                    water particles per second.  This can create problems on longer duration expeditions
+                    as more energy would be required to push the water particles aside, making hull design
+                    even more important. The majority of modern day underwater vehicles are designed to be
+                    shaped like a torpedo/ teardrop (rounded blunt nose with a smoothly tapered tail). 
+                    This is because it offers the lowest hydrodynamic drag and highest energy efficiency
+                    for long distance or high speed cruising. However, having a more streamlined shape 
+                    lowers pressure drag but adds surface area and friction so engineers have to choose
+                    the best shape to compromise on for efficiency.</p>
             </section>
 
             <section id="pressure">
                 <h2>Pressure</h2>
-                <p>...</p>
+                <p>
+                    Underwater pressure is the force that is exerted from all directions against an object.
+                    The greater the depth the heavier the column of water above becomes, causing the pressure
+                    to increase rapidly. For every 10m you go down, the pressure increases by one atmosphere
+                    (kPa[NOAA, 2026], meaning during deep sea exploration the pressure reaches hundreds of 
+                    atmospheres which can crush standard vessels if not built to withstand it. To survive 
+                    the hydrostatic pressures forces underwater vehicles typically use spherical shapes to
+                    distribute compressive forces evenly, alongside high strength materials such as titanium
+                    due to their high strength to weight ratio and resistance to deformation. This was proven
+                    in 2023 when Oceangate’s Titan sub dive to 3,800m went tragically wrong and five lives 
+                    were lost. One of the key reasons the Titan sub failed was its carbon fiber hull which 
+                    had damage built up over repeated dives, from not using the spherical titanium design 
+                    typical for deep sea vehicles. Therefore the crushing pressure of the deep was distributed
+                    unequally causing the sub to implode [BBC, 2024]. 
+                </p>
 
                 <figure id="fig1">
                     <img src="figure1.png" alt="Graph of pressure against depth">
@@ -89,17 +130,52 @@
 
             <section id="propulsion">
                 <h2>Propulsion</h2>
-                <p>...</p>
+                <p>
+                    To travel through the ocean, underwater vehicles rely on some form of propulsion, with
+                    propellers being the most widely used choice. This is because they are simple, reliable,
+                    cheap and easy to seal against pressure in low depths. A propeller's role is to push water
+                    backwards, and by Newton’s Third Law (every action force, there is an equal and opposite 
+                    reaction force) the vehicle moves forwards. The propeller creates its thrust by using curved
+                    blades that act as rotating wings to create a pressure difference, pulling water in from
+                    the front and driving a high speed stream out the back. Engineers have and are trying to
+                    emulate a fish’s scale and body shape due to their better suited ability for sliding 
+                    through the water then submarines. However, MIT points out that fish-like swimming needs
+                    complex linkages and sophisticated robotic design so propellers remain standard [MIT, 2008].
+                </p>
             </section>
 
             <section id="biomimetics">
                 <h2>Biomimetics</h2>
-                <p>...</p>
+                <p>
+                    Biomimetic design is vital in underwater vehicles as in deep sea it is important to not 
+                    damage or disturb the surrounding wildlife, for the quality of research. Biomimetic design
+                    is the process of using nature inspired engineering to solve human challenges or protect 
+                    wildlife. An example of the use of biomimetic design in an underwater vehicle is shark skin
+                    inspired boundary layer on a vessel. Sharks are covered in tiny tooth-like scales called 
+                    denticles that overlap in precise patterns that channels water smoothly across the body. 
+                    This breaks up turbulence and reduces drag, allowing sharks to swim faster and quieter. 
+                    This is useful for underwater vehicles in long battery powered missions as reducing drag 
+                    by a few percent would save vast amounts of energy. Another biomimetic design used in 
+                    underwater vehicles is Jellyfish jet inspired propulsion as they are one of the most 
+                    efficient marine animals on the planet when considering the power to speed and weight 
+                    ratio [University of Southampton, 2021]. Robots use flexible ribs forming a bell to mimic
+                    the swimming pattern of a jelly fish and produce jets of fluid to propel the vessel through
+                    the water. However prototypes remain small and slow; one untethered soft robotic jellyfish
+                    reached only around 0.5 cm/s, far from the performance of current underwater vehicles 
+                    [Untethered soft robotic jellyfish, 2019].
+                </p>
             </section>
 
             <section id="conclusion">
                 <h2>Conclusion</h2>
-                <p>...</p>
+                <p>
+                    Going forward underwater vehicles are a necessity for discovering more of the ocean as they 
+                    provide opportunities that would not be available for humans. The deeper the operation the 
+                    more specialised and equipped the vessels need to be to overcome problems such as pressure,
+                    efficiency and environment. Overtime engineers have found many ways to create solutions from;
+                    altering the shape, using specific materials or copying sea creature attributes. Each with 
+                    its own purpose and each better from some tasks more than others. 
+                </p>
             </section>
             
         </div>
@@ -109,7 +185,7 @@
             <ul>
                 <!-- in the references section -->
                 <li id="ref1">[Bristol Aquarium, 2026] <em>How Much of the Ocean Has Been Discovered?</em>.<br>
-                    Available at:<a href="https://www.bristolaquarium.co.uk/blog/how-much-ocean-discovered-facts-statistics/"
+                    Available at: <a href="https://www.bristolaquarium.co.uk/blog/how-much-ocean-discovered-facts-statistics/"
                     target="_blank">https://www.bristolaquarium.co.uk/blog/how-much-ocean-discovered-facts-statistics/</a><br> 
                     (Accessed: 15th October 2026).
                 </li>
