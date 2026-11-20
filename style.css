@@ -14,22 +14,16 @@
   font-style: bold;
   font-display: swap;
 }
-/*
+
 :root {
   --bg: #ffffff
   --text: #1c2733
   --accent: #0b5c7a;
   --accent-light: #e3f1f6;
   --border: #c9d6dd;
-}*/
-
-:root {
-    --bg: #0a1a2a;
-    --text: #e6eef3;
-    --accent: #4fd1c5;
-    --accent-light: #12304a;
-    --border: #25506e;
 }
+
+
 
 * { box-sizing: border-box; }
 
