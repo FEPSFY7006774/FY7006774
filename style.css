@@ -66,8 +66,38 @@ h1 {
 
 h2 {
   color: var(accent);
-  border-bottom:2px solid var(--accent-light);
   padding-bottom: 0.3rem;
   margin-top: 2rem;
   scroll-margin-top: 1rem;
+}
+
+#timestamp-box,
+#word-count {
+  text-align: center;
+}
+
+#word-count { font-weight: 600; }
+
+button { padding: 0.5rem 1rem;
+        background: var(--accent);
+        color: #ffffff;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background 0.2s;
+       }
+
+button:hover {
+  background: var(--text);
+}
+
+#toc {
+  background: var(--accent-light);
+  padding: 0.5rem 1.2rem 1rem;
+  border-radius: 8px
+}
+
+#toc h2 {
+  border: none;
+  margin-top: 0.5rem;
 }
