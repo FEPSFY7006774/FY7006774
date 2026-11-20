@@ -91,5 +91,27 @@ button:hover {
   background: var(--text);
 }
 
+a { color: var(--accent); }
+
+.cite {
+  text-decoration: none;
+  font-weight:600;
+}
+
+.cite:hover { text-decoration: underline; }
+
+img { max-width: 100%; height: auto; }
+
+figure {
+  margin: 1.5rem 0;
+  text-align: center
+}
+
+figcaption {
+  font-size: 0.9rem;
+  color: #4a5a66;
+  margin-top: 0.4rem;
+}
+
 
 
