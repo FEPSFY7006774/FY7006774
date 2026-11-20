@@ -91,14 +91,5 @@ button:hover {
   background: var(--text);
 }
 
-#toc {
-  padding: 0.5rem 1.2rem 1rem;
-  border-radius: 8px
-}
-
-#toc h2 {
-  border: none;
-  margin-top: 0.5rem;
-}
 
 
