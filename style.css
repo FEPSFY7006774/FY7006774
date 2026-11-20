@@ -1,1 +1,41 @@
 
+@font-face {
+  font-family: "Nunito";
+  src: url("Nunito-VariableFont_wght.ttf") format("truetype");
+  font-weight: 200 1000;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url("Nunito-Bold.ttf") format("truetype");
+  font-weight: 200 1000;
+  font-style: bold;
+  font-display: swap;
+}
+
+:root {
+  --bg: #ffffff
+  --text: #1c2733
+  --accent: #0b5c7a;
+  --accent-light: #e3f1f6;
+  --border: #c9d6dd;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behaviour: smooth; }
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: var(--test);
+  background: var(--bg);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0 1rem 3rem;
+}
+
+button, input, select, trxtarea {
+  font: inherit;
+}
