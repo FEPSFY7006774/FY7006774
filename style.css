@@ -73,9 +73,20 @@ h2 {
   scroll-margin-top: 1rem;
 }
 
-#timestamp-box,
+#timestamp-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  felx-wrap: wrap;
+}
+
+#timestamp-box p {
+  margin: 0
+}
+
 #word-count {
-  text-align: center;
+  text-align: left;
 }
 
 #word-count { font-weight: 600; }
