@@ -72,7 +72,7 @@ h2 {
   margin-top: 2rem;
   scroll-margin-top: 1rem;
 }
-
+/*
 #timestamp-box {
   display: flex;
   align-items: center;
@@ -88,8 +88,13 @@ h2 {
 #word-count {
   text-align: left;
 }
+*/
 
-#word-count { font-weight: 600; }
+#timestamp-box,
+#word-count {
+  text-align: center;
+}
+
 
 button {
   padding: 0.5rem 1rem;
