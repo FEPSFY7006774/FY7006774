@@ -4,7 +4,7 @@ async function getLastUpdatedTime() {
         const username = 'FEPSFY7006774';
         const repo = 'FY7006774';
 
-        const url = "https://api.github.com/repos/${username}/${repo}/commits";
+        const url = 'https://api.github.com/repos/${username}/${repo}/commits';
         try {
             const response = await fetch(url, {
                 method: 'GET',
@@ -14,7 +14,7 @@ async function getLastUpdatedTime() {
             });
             
              if (!response.ok) {
-                throw new Error(Error fetching data: ${response.status} - ${response.statusText});
+                throw new Error("Error fetching data: ${response.status} - ${response.statusText}");
             }
 
             const commits = await response.json();
