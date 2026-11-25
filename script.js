@@ -1,20 +1,20 @@
 // Adding last updated
 
 async function getLastUpdatedTime() {
-        const username = 'FEPSFY7006774';
-        const repo = 'FY7006774';
+        const username = "FEPSFY7006774";
+        const repo = "FY7006774";
 
-        const url = 'https://api.github.com/repos/${username}/${repo}/commits';
+        const url = "https://api.github.com/repos/${username}/${repo}/commits";
         try {
             const response = await fetch(url, {
-                method: 'GET',
+                method: "GET",
                 headers: {
-                    'Accept': 'application/vnd.github.v3+json',
+                    "Accept": "application/vnd.github.v3+json",
                 }
             });
             
              if (!response.ok) {
-                throw new Error('Error fetching data: ${response.status} - ${response.statusText}');
+                throw new Error("Error fetching data: ${response.status} - ${response.statusText}");
             }
 
             const commits = await response.json();
@@ -22,21 +22,21 @@ async function getLastUpdatedTime() {
                 const lastCommitDate = new Date(commits[0].commit.committer.date);
 
                 // Displaying the time on load
-                document.getElementById('last-updated').innerText = Last Modified Time: ${lastCommitDate.toLocaleString()};
+                document.getElementById("last-updated").innerText = "Last Modified Time: ${lastCommitDate.toLocaleString()"};
             } else {
-                document.getElementById('last-updated').innerText = 'No commits found in the repository.';
+                document.getElementById("last-updated").innerText = "No commits found in the repository.";
         }
     } catch (error) {
-        console.error('Error fetching the last updated time:', error);
-        document.getElementById('last-updated').innerText = 'Error fetching update time. Please check the repository details.';
+        console.error("Error fetching the last updated time:", error);
+        document.getElementById("last-updated").innerText = "Error fetching update time. Please check the repository details.";
     }
 }
 
 // Function to verify the last update time by re-fetching it from the API
 async function verifyLastUpdatedTime() {
-    document.getElementById('last-updated').innerText = 'Verifying...';
+    document.getElementById("last-updated").innerText = "Verifying...";
     await getLastUpdatedTime();
-    alert('Last modified time has been successfully verified from GitHub API.');
+    alert("Last modified time has been successfully verified from GitHub API.");
 }
 
 // Word count
@@ -59,9 +59,12 @@ function displayTotalWordCount() {
 
     totalWordCount += displayWordCount(sectionId);
     }
-    document.getElementById('word-count').innerText = Total word count: ${totalWordCount};
+    document.getElementById("word-count").innerText = Total word count: ${totalWordCount};
 
 }
 
 // run both when loads
-window.onload = displayTotalWordCount;
+window.onload = function() {
+        getLastUpdaedTime();
+        displayTotalWordCount;
+};
