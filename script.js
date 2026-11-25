@@ -14,7 +14,7 @@ async function getLastUpdatedTime() {
             });
             
              if (!response.ok) {
-                throw new Error("Error fetching data: ${response.status} - ${response.statusText}");
+                throw new Error('Error fetching data: ${response.status} - ${response.statusText}');
             }
 
             const commits = await response.json();
@@ -36,7 +36,7 @@ async function getLastUpdatedTime() {
 async function verifyLastUpdatedTime() {
     document.getElementById('last-updated').innerText = 'Verifying...';
     await getLastUpdatedTime();
-    alert("Last modified time has been successfully verified from GitHub API.");
+    alert('Last modified time has been successfully verified from GitHub API.');
 }
 
 // Word count
@@ -53,13 +53,13 @@ function displayWordCount(sectionId) {
 }
 
 //add up every counted section
-fucntion displayTotalWordCount() {
-    let totalWordCount = 0
+function displayTotalWordCount() {
+    let totalWordCount = 0;
     for (const sectionId of countedSections) {
 
     totalWordCount += displayWordCount(sectionId);
     }
-    document.getElementById("word-count").innerText = Total word count: ${totalWordCount};
+    document.getElementById('word-count').innerText = Total word count: ${totalWordCount};
 
 }
 
