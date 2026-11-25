@@ -1,20 +1,20 @@
 // Adding last updated
-/*
-async function getLastUpdatedTime() {
-        const username = "FEPSFY7006774";
-        const repo = "FY7006774";
 
-        const url = "https://api.github.com/repos/${username}/${repo}/commits";
+async function getLastUpdatedTime() {
+        const username = `FEPSFY7006774`;
+        const repo = `FY7006774`;
+
+        const url = `https://api.github.com/repos/${username}/${repo}/commits`;
         try {
             const response = await fetch(url, {
-                method: "GET",
+                method: `GET`,
                 headers: {
-                    "Accept": "application/vnd.github.v3+json",
+                    `Accept`: `application/vnd.github.v3+json`,
                 }
             });
             
              if (!response.ok) {
-                throw new Error("Error fetching data: ${response.status} - ${response.statusText}");
+                throw new Error(`Error fetching data: ${response.status} - ${response.statusText}`);
             }
 
             const commits = await response.json();
@@ -22,32 +22,32 @@ async function getLastUpdatedTime() {
                 const lastCommitDate = new Date(commits[0].commit.committer.date);
 
                 // Displaying the time on load
-                document.getElementById("last-updated").innerText = "Last Modified Time: ${lastCommitDate.toLocaleString()"};
+                document.getElementById(`last-updated`).innerText = `Last Modified Time: ${lastCommitDate.toLocaleString()`};
             } else {
-                document.getElementById("last-updated").innerText = "No commits found in the repository.";
+                document.getElementById(`last-updated`).innerText = `No commits found in the repository.`;
         }
     } catch (error) {
-        console.error("Error fetching the last updated time:", error);
-        document.getElementById("last-updated").innerText = "Error fetching update time. Please check the repository details.";
+        console.error(`Error fetching the last updated time:`, error);
+        document.getElementById(`last-updated`).innerText = `Error fetching update time. Please check the repository details.`;
     }
 }
 
 // Function to verify the last update time by re-fetching it from the API
 async function verifyLastUpdatedTime() {
-    document.getElementById("last-updated").innerText = "Verifying...";
+    document.getElementById(`last-updated`).innerText = `Verifying...`;
     await getLastUpdatedTime();
-    alert("Last modified time has been successfully verified from GitHub API.");
+    alert(`Last modified time has been successfully verified from GitHub API.`);
 }
 
 // Word count
-const countedSections = ["introduction", "drag", "pressure", "propulsion", "biomimetics", "conclusion"];
+const countedSections = [`introduction`, `drag`, `pressure`, `propulsion`, `biomimetics`, `conclusion`];
 
 // counts words in one section
 function displayWordCount(sectionId) {
     // get text from section
     const text = document.getElementById(sectionId).textContent;
     // split text into words and filter empty strings 
-    const wordArray = text.trim().split(/\s+/).filter(word => word !== "");
+    const wordArray = text.trim().split(/\s+/).filter(word => word !== ``);
     //return word count
     return wordArray.length;
 }
@@ -59,7 +59,7 @@ function displayTotalWordCount() {
 
     totalWordCount += displayWordCount(sectionId);
     }
-    document.getElementById("word-count").innerText = Total word count: ${totalWordCount};
+    document.getElementById(`word-count`).innerText = Total word count: ${totalWordCount};
 
 }
 
@@ -68,8 +68,9 @@ window.onload = function() {
         getLastUpdaedTime();
         displayTotalWordCount;
 };
-*/
 
+
+/*
 // ---------- Last updated time stamp ----------
 async function getLastUpdatedTime() {
     const username = 'FEPSFY7006774';
@@ -107,18 +108,18 @@ async function getLastUpdatedTime() {
 async function verifyLastUpdatedTime() {
     document.getElementById('last-updated').innerText = 'Verifying...';
     await getLastUpdatedTime();
-    alert("Last modified time has been successfully verified from GitHub API.");
+    alert(`Last modified time has been successfully verified from GitHub API.`);
 }
 
 // ---------- Word count ----------
-const countedSections = ["introduction", "drag", "pressure", "propulsion", "biomimetics", "conclusion"];
+const countedSections = [`introduction`, `drag`, `pressure`, `propulsion`, `biomimetics`, `conclusion`];
 
 // counts words in one section
 function displayWordCount(sectionId) {
     // get text from section
     const text = document.getElementById(sectionId).textContent;
     // split text into words and filter empty strings
-    const wordArray = text.trim().split(/\s+/).filter(word => word !== "");
+    const wordArray = text.trim().split(/\s+/).filter(word => word !== ``);
     // return word count
     return wordArray.length;
 }
@@ -129,7 +130,7 @@ function displayTotalWordCount() {
     for (const sectionId of countedSections) {
         totalWordCount += displayWordCount(sectionId);
     }
-    document.getElementById("word-count").innerText = `Total word count: ${totalWordCount}`;
+    document.getElementById(`word-count`).innerText = `Total word count: ${totalWordCount}`;
 }
 
 // run BOTH when the page loads (only one window.onload is allowed,
@@ -138,3 +139,4 @@ window.onload = function () {
     getLastUpdatedTime();
     displayTotalWordCount();
 };
+*/
